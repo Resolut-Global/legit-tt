@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self' https://script.google.com https://script.googleusercontent.com; manifest-src 'self'; worker-src 'self'; base-uri 'self'; form-action 'self'; object-src 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#0A2650">
+<title>Verify a seller | LEGIT-TT</title>
+<meta name="description" content="Check a seller's LEGIT-TT certification: scan the badge QR code or search by certificate number or business name.">
+<meta name="robots" content="noindex">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/inter-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header id="site-header" class="site-header"></header>
+<main id="main">
+  <section class="page-head">
+    <div class="container narrow">
+      <p class="tagline" id="tagline">Buy Secure</p>
+      <h1>Verify a seller</h1>
+      <form id="search-form" class="search" novalidate>
+        <label for="q">Certificate number or business name</label>
+        <div class="search__row">
+          <input class="input" id="q" name="q" type="search" inputmode="search" autocomplete="off" autocapitalize="characters" placeholder="LTT-2026-00001 or seller name" aria-describedby="search-error" maxlength="60">
+          <button class="btn btn--gold" type="submit">Verify</button>
+        </div>
+        <p class="field-error" id="search-error" role="alert"></p>
+      </form>
+    </div>
+  </section>
+  <section class="results">
+    <div class="container narrow">
+      <div id="result" role="status" aria-live="polite" tabindex="-1"></div>
+    </div>
+  </section>
+</main>
+<footer id="site-footer"></footer>
+<noscript><p class="noscript">JavaScript is needed to verify a seller. Please turn it on, or e-mail us.</p></noscript>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/api.js"></script>
+<script src="assets/js/layout.js"></script>
+<script src="assets/js/qrcode.js"></script>
+<script src="assets/js/badge.js"></script>
+<script src="assets/js/verify.js"></script>
+</body>
+</html>
